@@ -17,7 +17,7 @@ app = FastAPI(title="Motion Detection Service")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://zesty-kataifi-db2538.netlify.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -141,3 +141,4 @@ async def download_processed(job_id: str):
     if not path or not os.path.exists(path):
         raise HTTPException(status_code=404, detail="Processed file not available")
     return FileResponse(path, media_type="video/mp4", filename=os.path.basename(path))
+
