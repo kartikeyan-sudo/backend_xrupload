@@ -7,6 +7,6 @@ numpy==1.25.2
 pytest==7.4.0
 pydantic==1.10.9
 requests==2.31.0
-setuptools>=65.0.0
-wheel
-build
+setuptools>=68.0.0
+wheel>=0.40
+build>=1.0.0
