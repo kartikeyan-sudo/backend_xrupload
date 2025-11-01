@@ -1,3 +1,4 @@
+setuptools>=68.0.0
 fastapi==0.95.2
 uvicorn[standard]==0.22.0
 python-multipart==0.0.6
@@ -7,6 +8,6 @@ numpy==1.25.2
 pytest==7.4.0
 pydantic==1.10.9
 requests==2.31.0
-setuptools>=68.0.0
+
 wheel>=0.40
 build>=1.0.0
